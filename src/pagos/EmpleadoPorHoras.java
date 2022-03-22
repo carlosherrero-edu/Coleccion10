@@ -55,7 +55,7 @@ public class EmpleadoPorHoras extends Empleado {
 		if (getHorasSemanales() <= JORNADA_COMPLETA_SEMANAL) {
 			return getHorasSemanales() * getTarifaHoraria();
 		} else {
-			return JORNADA_COMPLETA_SEMANAL * getTarifaHoraria() + (JORNADA_COMPLETA_SEMANAL) * getTarifaHoraria() * FACTOR_HORA_EXTRA;
+			return JORNADA_COMPLETA_SEMANAL * getTarifaHoraria() + (getHorasSemanales()-JORNADA_COMPLETA_SEMANAL) * getTarifaHoraria() * FACTOR_HORA_EXTRA;
 		}
 
 	}

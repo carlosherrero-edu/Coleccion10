@@ -14,7 +14,11 @@ public class pruebaFraccion {
 		System.out.println(f.producto(f1));
 		System.out.println(f.cociente(f1));
 		
-		Fraccion f0= new Fraccion(20,0);
+		try {
+			Fraccion f0= new Fraccion(20,0);
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		
 		
 	}

@@ -8,6 +8,8 @@ public class pruebaFraccion {
 		Fraccion f = new Fraccion(3, 4);
 		Fraccion f1 = new Fraccion(2, 5);
 		
+		System.out.format("(%d/%d)", f.num, f.denum);
+		
 		
 		System.out.println(f.suma(f1));
 		System.out.println(f.resta(f1));

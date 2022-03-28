@@ -61,23 +61,23 @@ public class Poligono implements Comparable<Poligono> {
 		}
 		return sonIguales;
 	}
-	
+
 	@Override
-	public int compareTo(Poligono o) {
+	public int compareTo(Poligono o2) {
 		int resultado;
-		if (this.getNum_lados() <o.getNum_lados()) {
+		if (this.getNum_lados() <o2.getNum_lados()) {
 			resultado=-1;
-		} else if (this.getNum_lados() > o.getNum_lados()) {
+		} else if (this.getNum_lados() > o2.getNum_lados()) {
 			resultado=+1;
 		} else { // si tienen igual  número de lados...
 			//decidir en función de la longitud del lado
 			Double longitud1= Double.valueOf(this.getLado());
-			Double longitud2= Double.valueOf(o.getLado());
+			Double longitud2= Double.valueOf(o2.getLado());
 			resultado= longitud1.compareTo(longitud2);
 			
-//			if (this.getLado()<o.getLado()) {
+//			if (this.getLado()<o2.getLado()) {
 //				resultado=-1;
-//			} else if ( this.getLado() > o.getLado()){
+//			} else if ( this.getLado() > o2.getLado()){
 //				resultado=+1;
 //			} else {
 //				resultado=0;
@@ -87,6 +87,8 @@ public class Poligono implements Comparable<Poligono> {
 		}
 		return resultado;
 	}
+	
+	
 
 	
 

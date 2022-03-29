@@ -31,10 +31,20 @@ public class Principal {
 	public static void main(String[] args) {
 
 		rellenarLista();
+		
 
-
-		// ordenamos la lista antes de mostrarla
-		Collections.sort(listaPoligonos, new OrdenarPoligonos3());
+		/*
+		 * ordenamos la lista antes de mostrarla
+		 * elegimos una de las 3 clases de ordenación definidas en CriteriosOrdenacion
+		 */
+		
+		/*
+		 * Collections.sort(listaPoligonos, new OrdenarPoligonos()); //elegimos 1º criterio
+		 * Collections.sort(listaPoligonos, new OrdenarPoligonos2()); //elegimos 2º criterio
+		 * Collections.sort(listaPoligonos, new OrdenarPoligonos3()); //elegimos 3º criterio
+		 */
+		//presentamos la lista tras la ordenación
+		
 		mostrarLista();
 
 	}

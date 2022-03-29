@@ -8,6 +8,13 @@ public class CriteriosOrdenacion {
 }
 
 
+/**
+ * Clase Primera para configurar la ordenación de objetos de la clase Polígono
+ * Se ordenan primero los polígonos con menor número de lados
+ * Para 2 polígonos con igual número de lados, se ordena primero el de lado más corto
+ * @author Carlos H.
+ *
+ */
 class OrdenarPoligonos implements Comparator<Poligono> {
 
 	@Override
@@ -39,6 +46,13 @@ class OrdenarPoligonos implements Comparator<Poligono> {
 } //fin de la clase OrdenarPoligonos
 
 
+/**
+ * Clase Segunda para configurar la ordenación de objetos de la clase Polígono
+ * Se ordenan primero los polígonos con el lado más corto
+ * Para 2 polígonos cuyo lado mida igual, se ordena primero el de menor número de lados
+ * @author Carlos H.
+ *
+ */
 class OrdenarPoligonos2 implements Comparator<Poligono> {
 
 	@Override
@@ -70,6 +84,14 @@ class OrdenarPoligonos2 implements Comparator<Poligono> {
 	}
 }//fin de la clase OrdenarPoligonos2
 
+
+/**
+ * Clase Tercera para configurar la ordenación de objetos de la clase Polígono
+ * Se ordenan primero los polígonos con menor perímetro (suma de longitudes de lados)
+ * Para 2 polígonos cuyo lado perímetro mida igual, se ordena primero el de menor número de lados
+ * @author Carlos H.
+ *
+ */
 class OrdenarPoligonos3 implements Comparator<Poligono> {
 
 	@Override

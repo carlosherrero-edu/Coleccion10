@@ -75,6 +75,31 @@ public class Futbolista implements Comparable<Futbolista> {
 		}
 	
 	}
+	
+	
+	/**
+	 *
+	 */
+	
+	public String toString() {
+
+		return String.format("%9s  %-30s, %d años\n",
+				this.getDni(), this.getNombre(), this.getEdad());
+	}
+	
+	
+	@Override
+	public boolean equals(Object otro) {
+
+		boolean sonIguales = false;
+		if (otro instanceof Futbolista) {
+			Futbolista otroContacto = (Futbolista) otro;
+			if (getDni().equals(otroContacto.getDni())) {
+				sonIguales = true;
+			}
+		}
+		return sonIguales;
+	}
 
 	@Override
 	public int compareTo(Futbolista o) {

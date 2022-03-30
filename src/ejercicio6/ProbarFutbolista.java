@@ -16,7 +16,7 @@ public class ProbarFutbolista {
 		miLista.add(new Futbolista("11111111A","Pepito Perez", 26,1000));
 		miLista.add(new Futbolista("33333333J","Aitor Gomez", 30,200));
 		
-		//hago la ordenación natural
+		//hago la ordenación por una clase Comparadora
 		Collections.sort(miLista, new ComparadorFutbolista2());
 		//recorrer el array
 		for (Futbolista jugador:miLista) {
